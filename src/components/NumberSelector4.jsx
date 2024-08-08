@@ -18,7 +18,7 @@ const NumberSelector = ({selectedNumber,setSelectedNumber,error,setError}) => {
             arrNumber.map((value,i)=>(
                 <Box
                 key={i}
-                onClick={()=>NumberSelectorHandler(value)}          //()=> is used when we need to pass value to a function
+                onClick={()=>NumberSelectorHandler(value)}          //(callback ()=>) is used when we need to pass value to a function
                                                                 // setSelectedNumber(value) is setting the value of array clicked in setSelectNumber function
                 isSelected={value==selectedNumber}              // using props to apply css based on condition that is the value and selected number are same then only css will be applied
                 > {value}</Box>

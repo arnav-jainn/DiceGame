@@ -9,6 +9,7 @@ function App() {
 
   const [isGameStarted,setIsGameStarted]=useState(false);
                 // this is used to toggle btwn diff components on a click in StartGame.jsx
+                
   const toggleGame = ()=>{
 
     setIsGameStarted((prev)=>!prev);
